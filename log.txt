@@ -1,0 +1,2373 @@
+[2025-06-29 23:02:18.644728] Starting data preparation.
+[2025-06-29 23:02:20.779257] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-29 23:02:22.189661] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-29 23:02:22.456855] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-29 23:10:32.678653] Starting data preparation.
+[2025-06-29 23:10:34.782571] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-29 23:10:36.839021] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-29 23:10:38.345648] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-29 23:10:38.637615] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-29 23:11:10.270646] Cleaned non-numeric values and filled NaNs.
+[2025-06-29 23:11:10.413722] Train shape: (1049761, 32), Val shape: (394500, 32), Test shape: (240540, 32)
+[2025-06-29 23:11:11.081206] StandardScaler fitted on train and applied to all splits.
+[2025-06-29 23:11:39.048248] Saved train/val/test CSVs to processed directory.
+[2025-06-29 23:11:39.048414] Data preparation complete.
+[2025-06-29 23:31:43.810106] Starting EDA analysis.
+[2025-06-29 23:31:47.874859] Saved correlation heatmap and top correlations.
+[2025-06-29 23:31:48.899635] Saved rolling statistics plot.
+[2025-06-29 23:31:50.843766] Saved scatter plots for top correlated sensors.
+[2025-06-29 23:31:50.843810] EDA analysis complete.
+[2025-06-29 23:51:50.025829] Starting data preparation.
+[2025-06-29 23:51:52.249197] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-29 23:51:54.233913] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-29 23:51:55.658512] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-29 23:51:55.939239] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-29 23:52:27.208553] Cleaned non-numeric values and filled NaNs.
+[2025-06-29 23:52:27.485733] Train shape: (1049761, 32), Val shape: (394500, 32), Test shape: (240540, 32)
+[2025-06-29 23:52:46.437729] Saved unscaled raw train/val/test splits.
+[2025-06-29 23:52:46.934693] StandardScaler fitted on train and applied to all splits.
+[2025-06-29 23:53:13.951451] Saved train/val/test CSVs to processed directory.
+[2025-06-29 23:53:13.951492] Data preparation complete.
+[2025-06-29 23:55:21.390377] Starting EDA analysis.
+[2025-06-29 23:55:26.384544] Saved correlation heatmap and top correlations.
+[2025-06-29 23:55:27.421277] Saved rolling statistics plot (raw).
+[2025-06-29 23:55:29.375022] Saved scatter plots for top correlated sensors (raw).
+[2025-06-29 23:55:29.375068] EDA analysis complete.
+[2025-06-30 00:02:02.431600] Starting baseline_naive.py
+[2025-06-30 00:05:29.934923] Starting baseline_naive.py
+[2025-06-30 00:05:35.688488] Naive_LastValue - MAE: 0.1100, MSE: 0.0300, MAPE: 112.98%
+[2025-06-30 00:05:35.690283] Naive_RollingMean - MAE: 0.1315, MSE: 0.0435, MAPE: 152.33%
+[2025-06-30 00:05:35.691959] Naive_LinearTrend - MAE: 0.1125, MSE: 0.0321, MAPE: 131.51%
+[2025-06-30 00:05:35.879946] Saved naive prediction plot and metrics.
+[2025-06-30 00:08:29.215993] Starting baseline_naive.py
+[2025-06-30 00:08:34.956615] Naive_LastValue - MAE: 0.1100, MSE: 0.0300, MAPE: 112.98%
+[2025-06-30 00:08:34.957711] Naive_RollingMean - MAE: 0.1315, MSE: 0.0435, MAPE: 152.33%
+[2025-06-30 00:08:34.958848] Naive_LinearTrend - MAE: 0.1125, MSE: 0.0321, MAPE: 131.51%
+[2025-06-30 00:08:35.141131] Saved naive prediction plot and metrics.
+[2025-06-30 00:16:33.935040] Starting baseline_ml.py
+[2025-06-30 00:19:25.823386] Train shape: (1049671, 1860), Test shape: (240450, 1860)
+[2025-06-30 10:13:59.137754] Starting baseline_ml.py (mini test version)
+[2025-06-30 10:14:01.976105] Train shape: (9910, 1860), Test shape: (9910, 1860)
+[2025-06-30 10:14:19.637693] Random Forest trained.
+[2025-06-30 10:14:19.669174] RandomForest_Mini - MAE: 0.4638, MSE: 0.6701, MAPE: 89.21%
+[2025-06-30 10:14:19.868177] Saved ML prediction plot and metrics.
+[2025-06-30 10:47:41.208512] Starting data preparation.
+[2025-06-30 10:47:43.180625] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 10:47:44.866266] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 10:47:46.439471] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 10:47:46.705131] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 10:49:48.150703] Starting data preparation.
+[2025-06-30 10:49:50.062296] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 10:49:51.802273] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 10:49:53.244324] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 10:49:53.527299] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 10:50:24.936201] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 11:06:41.232081] Starting data preparation.
+[2025-06-30 11:06:43.190136] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 11:06:44.995037] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 11:06:46.420688] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 11:06:46.688358] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 11:07:17.145678] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 11:07:17.459833] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 11:07:17.646182] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 11:07:17.885996] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 11:07:17.988052] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 11:07:18.286751] Train shape: (1049761, 32), Val shape: (394500, 32), Test shape: (240540, 32)
+[2025-06-30 11:07:36.995065] Saved unscaled raw train/val/test splits.
+[2025-06-30 11:07:37.428125] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 11:08:04.631916] Saved train/val/test CSVs to processed directory.
+[2025-06-30 11:08:04.632257] Data preparation complete.
+[2025-06-30 11:10:30.628536] Starting data preparation.
+[2025-06-30 11:10:32.557917] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 11:10:34.294419] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 11:10:35.678863] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 11:10:35.952232] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 11:11:09.572996] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 11:11:09.878939] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 11:11:10.083021] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 11:11:10.296389] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 11:11:10.403502] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 11:11:10.711816] Train shape: (1049761, 32), Val shape: (394500, 32), Test shape: (240540, 32)
+[2025-06-30 11:11:29.838293] Saved unscaled raw train/val/test splits.
+[2025-06-30 11:11:30.284949] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 11:11:58.026012] Saved train/val/test CSVs to processed directory.
+[2025-06-30 11:11:58.026353] Data preparation complete.
+[2025-06-30 11:54:20.315872] Starting data preparation.
+[2025-06-30 11:54:22.339659] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 11:54:24.148690] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 11:54:25.729996] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 11:54:26.016156] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 11:54:56.872312] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 11:54:57.181078] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 11:54:57.368639] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 11:54:57.617927] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 11:54:57.725825] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 11:54:57.748917] Train shape: (70272, 32), Val shape: (8784, 32), Test shape: (8784, 32)
+[2025-06-30 11:54:58.729464] Saved unscaled raw train/val/test splits.
+[2025-06-30 11:54:58.745362] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 11:55:00.103650] Saved train/val/test CSVs to processed directory.
+[2025-06-30 11:55:00.103695] Data preparation complete.
+[2025-06-30 11:55:17.274764] Starting baseline_ml.py (mini test version)
+[2025-06-30 11:55:17.544455] Train shape: (9910, 1860), Test shape: (8694, 1860)
+[2025-06-30 11:55:32.828768] Random Forest trained.
+[2025-06-30 11:55:32.856420] RandomForest_Mini - MAE: 0.0821, MSE: 0.0142, MAPE: 156.90%
+[2025-06-30 11:55:33.018559] Saved ML prediction plot and metrics.
+[2025-06-30 12:25:32.281311] Starting data preparation.
+[2025-06-30 12:25:34.280801] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 12:25:36.229971] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 12:25:37.783213] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 12:25:38.062992] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 12:26:09.480352] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 12:26:09.797763] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 12:26:09.970815] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 12:26:10.190795] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 12:26:10.299855] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 12:26:10.323097] Train shape: (70272, 32), Val shape: (8784, 32), Test shape: (8784, 32)
+[2025-06-30 12:26:11.329677] Saved unscaled raw train/val/test splits.
+[2025-06-30 12:26:11.385703] Saved plot to data/processed/sensor1_train_raw.png
+[2025-06-30 12:26:11.435317] Saved plot to data/processed/sensor1_val_raw.png
+[2025-06-30 12:26:11.480564] Saved plot to data/processed/sensor1_test_raw.png
+[2025-06-30 12:26:11.500206] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 12:26:12.935302] Saved train/val/test CSVs to processed directory.
+[2025-06-30 12:26:12.935393] Data preparation complete.
+[2025-06-30 12:36:51.639800] Starting baseline_ml.py (mini test version)
+[2025-06-30 12:36:51.946661] Train shape: (9910, 1860), Test shape: (8694, 1860)
+[2025-06-30 12:37:06.953754] Random Forest trained.
+[2025-06-30 12:37:06.985024] RandomForest_Mini - MAE: 0.0821, MSE: 0.0142, MAPE: 156.90%
+[2025-06-30 12:37:07.163746] Saved ML prediction plot and metrics.
+[2025-06-30 13:54:10.637691] Starting baseline_naive.py
+[2025-06-30 13:54:10.854272] Naive_LastValue - MAE: 0.0612, MSE: 0.0071, MAPE: 119.85%
+[2025-06-30 13:54:10.854672] Naive_RollingMean - MAE: 0.0716, MSE: 0.0095, MAPE: 147.54%
+[2025-06-30 13:54:10.855040] Naive_LinearTrend - MAE: 0.0629, MSE: 0.0076, MAPE: 122.56%
+[2025-06-30 13:54:11.045085] Saved naive prediction plot and metrics.
+[2025-06-30 13:55:41.792589] Starting baseline_ml.py (mini test version)
+[2025-06-30 13:55:42.776963] Train shape: (70182, 1860), Test shape: (8694, 1860)
+[2025-06-30 13:58:34.308953] Random Forest trained.
+[2025-06-30 13:58:34.360576] RandomForest_Mini - MAE: 0.0638, MSE: 0.0078, MAPE: 116.03%
+[2025-06-30 13:58:34.547123] Saved ML prediction plot and metrics.
+[2025-06-30 14:17:35.994362] Starting baseline_ml.py (mini test version)
+[2025-06-30 14:17:36.675233] Train shape: (70182, 1860), Test shape: (8694, 1860)
+[2025-06-30 14:20:00.249072] Starting baseline_ml.py (mini test version)
+[2025-06-30 14:20:00.249135] Loading train and test datasets...
+[2025-06-30 14:20:00.428131] Generating sliding windows for training data...
+[2025-06-30 14:20:01.195230] Generating sliding windows for test data...
+[2025-06-30 14:20:01.231340] Train shape: (70182, 1860), Test shape: (8694, 1860)
+[2025-06-30 14:20:01.231703] Training RandomForest model...
+[2025-06-30 14:23:10.686118] Random Forest trained.
+[2025-06-30 14:23:10.687027] Predicting test set...
+[2025-06-30 14:25:23.774375] RandomForest_Mini - MAE: 0.0638, MSE: 0.0078, MAPE: 116.03%
+[2025-06-30 14:25:24.010440] Saved ML prediction plot and metrics.
+[2025-06-30 14:32:37.520138] Starting lstm_model.py
+[2025-06-30 14:32:37.520306] Loading train and test datasets...
+[2025-06-30 14:32:37.707790] Generating supervised tensors...
+[2025-06-30 14:32:38.237248] Train shape: torch.Size([70182, 60, 31]), Test shape: torch.Size([8694, 60, 31])
+[2025-06-30 14:32:38.806981] Training LSTM model...
+[2025-06-30 14:33:00.863827] Epoch 1: Loss = 0.0728
+[2025-06-30 14:33:22.054303] Epoch 2: Loss = 0.0518
+[2025-06-30 14:33:45.701114] Epoch 3: Loss = 0.0439
+[2025-06-30 14:34:07.167707] Epoch 4: Loss = 0.0396
+[2025-06-30 14:34:29.965482] Epoch 5: Loss = 0.0393
+[2025-06-30 14:34:29.966256] Predicting test set...
+[2025-06-30 14:34:30.905390] LSTM - MAE: 0.0576, MSE: 0.0062, MAPE: 104.15%
+[2025-06-30 14:34:31.172503] Saved LSTM prediction plot and metrics.
+[2025-06-30 17:06:25.858205] Starting lstm_model.py
+[2025-06-30 17:06:25.858399] Loading train and test datasets...
+[2025-06-30 17:06:26.037385] Generating supervised tensors...
+[2025-06-30 17:06:26.291794] Train shape: torch.Size([70182, 60, 31]), Test shape: torch.Size([8694, 60, 31])
+[2025-06-30 17:06:26.944124] Training LSTM model...
+[2025-06-30 17:06:49.117055] Epoch 1: Loss = 0.0771
+[2025-06-30 17:07:11.266058] Epoch 2: Loss = 0.0486
+[2025-06-30 17:07:33.374723] Epoch 3: Loss = 0.0435
+[2025-06-30 17:07:55.507901] Epoch 4: Loss = 0.0411
+[2025-06-30 17:08:17.514205] Epoch 5: Loss = 0.0368
+[2025-06-30 17:08:17.514311] Predicting test set...
+[2025-06-30 17:08:18.114412] LSTM - MAE: 0.0647, MSE: 0.0072, MAPE: 150.64%
+[2025-06-30 17:08:34.810894] Saved LSTM prediction plot and metrics.
+[2025-06-30 17:14:13.091897] Starting lstm_model.py
+[2025-06-30 17:14:13.092008] Loading train and test datasets...
+[2025-06-30 17:14:13.263320] Generating supervised tensors...
+[2025-06-30 17:14:13.523543] Train shape: torch.Size([70182, 60, 31]), Test shape: torch.Size([8694, 60, 31])
+[2025-06-30 17:14:14.041770] Training LSTM model...
+[2025-06-30 17:14:36.367039] Epoch 1: Loss = 0.0783
+[2025-06-30 17:14:58.491586] Epoch 2: Loss = 0.0500
+[2025-06-30 17:15:20.624252] Epoch 3: Loss = 0.0479
+[2025-06-30 17:15:42.570356] Epoch 4: Loss = 0.0505
+[2025-06-30 17:16:04.092867] Epoch 5: Loss = 0.0430
+[2025-06-30 17:16:04.092978] Predicting test set...
+[2025-06-30 17:16:04.601385] LSTM - MAE: 0.0623, MSE: 0.0072, MAPE: 128.41%
+[2025-06-30 17:16:38.124799] Saved LSTM prediction plot and metrics.
+[2025-06-30 17:17:02.376850] Starting lstm_model.py
+[2025-06-30 17:17:02.376915] Loading train and test datasets...
+[2025-06-30 17:17:02.595119] Generating supervised tensors...
+[2025-06-30 17:17:02.808017] Train shape: torch.Size([70182, 60, 31]), Test shape: torch.Size([8694, 60, 31])
+[2025-06-30 17:17:03.335739] Training LSTM model...
+[2025-06-30 17:17:25.151193] Epoch 1: Loss = 0.0797
+[2025-06-30 17:17:47.519032] Epoch 2: Loss = 0.0513
+[2025-06-30 17:18:11.177404] Epoch 3: Loss = 0.0509
+[2025-06-30 17:18:33.228868] Epoch 4: Loss = 0.0426
+[2025-06-30 17:18:55.069899] Epoch 5: Loss = 0.0421
+[2025-06-30 17:18:55.070015] Predicting test set...
+[2025-06-30 17:18:55.689687] LSTM - MAE: 0.0541, MSE: 0.0052, MAPE: 116.89%
+[2025-06-30 17:19:12.376848] Saved LSTM prediction plot and metrics.
+[2025-06-30 21:42:02.609428] Starting data preparation.
+[2025-06-30 21:42:04.582334] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 21:42:06.462897] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 21:42:07.900390] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 21:42:08.172884] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 21:42:39.664699] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 21:42:40.017571] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 21:42:40.207679] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 21:42:40.433552] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 21:42:40.536518] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 21:42:40.571710] Train shape: (105984, 32), Val shape: (13248, 32), Test shape: (13248, 32)
+[2025-06-30 21:42:42.028356] Saved unscaled raw train/val/test splits.
+[2025-06-30 21:42:42.086438] Saved plot to data/processed/sensor1_train_raw.png
+[2025-06-30 21:42:42.134707] Saved plot to data/processed/sensor1_val_raw.png
+[2025-06-30 21:42:42.183186] Saved plot to data/processed/sensor1_test_raw.png
+[2025-06-30 21:42:42.207498] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 21:42:44.350884] Saved train/val/test CSVs to processed directory.
+[2025-06-30 21:42:44.350925] Data preparation complete.
+[2025-06-30 22:00:09.140598] Starting data preparation.
+[2025-06-30 22:00:11.222837] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 22:00:13.135732] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 22:00:14.748259] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 22:00:15.040296] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 22:00:45.898500] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 22:00:46.224131] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 22:00:46.430800] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 22:00:46.663373] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 22:00:46.764585] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 22:00:46.792842] Train shape: (92736, 32), Val shape: (19872, 32), Test shape: (19872, 32)
+[2025-06-30 22:00:48.246558] Saved unscaled raw train/val/test splits.
+[2025-06-30 22:00:48.308174] Saved plot to data/processed/sensor1_train_raw.png
+[2025-06-30 22:00:48.369391] Saved plot to data/processed/sensor1_val_raw.png
+[2025-06-30 22:00:48.421960] Saved plot to data/processed/sensor1_test_raw.png
+[2025-06-30 22:00:48.446152] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 22:00:50.704467] Saved train/val/test CSVs to processed directory.
+[2025-06-30 22:00:50.704503] Data preparation complete.
+[2025-06-30 22:03:55.341239] Starting data preparation.
+[2025-06-30 22:03:57.236612] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 22:03:58.918936] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 22:04:00.345043] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 22:04:00.621167] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 22:04:18.145177] Starting data preparation.
+[2025-06-30 22:04:20.039493] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-06-30 22:04:21.672530] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-06-30 22:04:23.025008] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-06-30 22:04:23.305501] Loaded 2025_raw.csv with shape (106561, 32)
+[2025-06-30 22:04:54.311502] Cleaned non-numeric values and filled NaNs.
+[2025-06-30 22:04:54.605230] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-06-30 22:04:54.774652] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-06-30 22:04:55.024978] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-06-30 22:04:55.127961] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-06-30 22:04:55.155110] Train shape: (92736, 32), Val shape: (19872, 32), Test shape: (19872, 32)
+[2025-06-30 22:04:56.661174] Saved unscaled raw train/val/test splits.
+[2025-06-30 22:04:56.716089] Saved plot to data/processed/sensor1_train_raw.png
+[2025-06-30 22:04:56.760629] Saved plot to data/processed/sensor1_val_raw.png
+[2025-06-30 22:04:56.810088] Saved plot to data/processed/sensor1_test_raw.png
+[2025-06-30 22:04:56.831413] StandardScaler fitted on train and applied to all splits.
+[2025-06-30 22:04:58.970168] Saved train/val/test CSVs to processed directory.
+[2025-06-30 22:04:58.970202] Data preparation complete.
+[2025-06-30 22:06:01.359429] Starting lstm_model.py
+[2025-06-30 22:06:01.359484] Loading train and test datasets...
+[2025-06-30 22:06:01.601741] Generating supervised tensors...
+[2025-06-30 22:06:01.918950] Train shape: torch.Size([92646, 60, 31]), Test shape: torch.Size([19782, 60, 31])
+[2025-06-30 22:06:02.534951] Training LSTM model...
+[2025-06-30 22:06:30.044583] Epoch 1: Loss = 0.0736
+[2025-06-30 22:06:58.023278] Epoch 2: Loss = 0.0507
+[2025-06-30 22:07:25.559533] Epoch 3: Loss = 0.0427
+[2025-06-30 22:07:52.831048] Epoch 4: Loss = 0.0474
+[2025-06-30 22:08:20.603399] Epoch 5: Loss = 0.0335
+[2025-06-30 22:08:20.603565] Predicting test set...
+[2025-06-30 22:08:22.267551] LSTM - MAE: 0.1124, MSE: 0.0225, MAPE: 69.30%
+[2025-06-30 22:09:00.047945] Saved LSTM prediction plot and metrics.
+[2025-06-30 22:17:15.750050] Starting baseline_naive.py
+[2025-06-30 22:17:16.257942] Naive_LastValue - MAE: 0.1499, MSE: 0.0444, MAPE: 64.98%
+[2025-06-30 22:17:16.258563] Naive_RollingMean - MAE: 0.2044, MSE: 0.0830, MAPE: 89.15%
+[2025-06-30 22:17:16.259091] Naive_LinearTrend - MAE: 0.1504, MSE: 0.0445, MAPE: 66.15%
+[2025-06-30 22:17:16.503673] Saved naive prediction plot and metrics.
+[2025-06-30 22:17:41.688304] Starting baseline_ml.py (mini test version)
+[2025-06-30 22:17:41.688429] Loading train and test datasets...
+[2025-06-30 22:17:41.964469] Generating sliding windows for training data...
+[2025-06-30 22:17:43.068919] Generating sliding windows for test data...
+[2025-06-30 22:17:43.156930] Train shape: (92646, 1860), Test shape: (19782, 1860)
+[2025-06-30 22:17:43.157117] Training RandomForest model...
+[2025-06-30 22:22:55.729133] Random Forest trained.
+[2025-06-30 22:22:55.729644] Predicting test set...
+[2025-06-30 22:28:00.326155] RandomForest_Mini - MAE: 0.2687, MSE: 0.5580, MAPE: 247.55%
+[2025-06-30 22:28:00.629815] Saved ML prediction plot and metrics.
+[2025-06-30 22:32:15.802353] Starting lstm_model.py
+[2025-06-30 22:32:15.802511] Loading train and test datasets...
+[2025-06-30 22:32:16.091922] Generating supervised tensors...
+[2025-06-30 22:32:16.982380] Train shape: torch.Size([92646, 60, 31]), Test shape: torch.Size([19782, 60, 31])
+[2025-06-30 22:32:17.580486] Training LSTM model...
+[2025-06-30 22:32:46.814411] Epoch 1: Loss = 0.0744
+[2025-06-30 22:33:16.047863] Epoch 2: Loss = 0.0489
+[2025-06-30 22:33:45.572736] Epoch 3: Loss = 0.0372
+[2025-06-30 22:34:14.785259] Epoch 4: Loss = 0.0369
+[2025-06-30 22:34:46.656773] Epoch 5: Loss = 0.0433
+[2025-06-30 22:34:46.657588] Predicting test set...
+[2025-06-30 22:34:48.997879] LSTM - MAE: 0.1267, MSE: 0.0335, MAPE: 96.40%
+[2025-06-30 22:35:27.367730] Saved LSTM prediction plot and metrics.
+INFO:root:[2025-06-30 22:55:03.695252] Starting tft_model.py
+INFO:root:[2025-06-30 23:49:40.505496] Starting tft_model.py
+INFO:root:[2025-06-30 23:52:56.987950] Starting tft_model.py
+ERROR:darts.models.forecasting.torch_forecasting_model:ValueError: Invalid model creation parameters. Model `TFTModel` has no args/kwargs `['attention_heads']`
+INFO:root:[2025-06-30 23:55:38.596337] Starting tft_model.py
+INFO:root:Training TFT model...
+ERROR:darts.models.forecasting.tft_model:ValueError: TFTModel requires future covariates. The model applies multi-head attention queries on future inputs. Consider specifying a future encoder with `add_encoders` or setting `add_relative_index` to `True` at model creation (read TFT model docs for more information). These will automatically generate `future_covariates` from indexes.
+INFO:root:[2025-07-01 00:01:27.357522] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 64-bits; casting model to float64.
+INFO:root:[2025-07-01 00:07:04.890786] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+ERROR:darts.timeseries:IndexError: Integer index out of range.
+INFO:root:[2025-07-01 00:42:07.705553] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:[2025-07-01 00:52:06.180267] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT - MAE: 0.3168, MSE: 0.1409, MAPE: 7.70%
+INFO:root:Saved TFT prediction plot and metrics.
+INFO:root:[2025-07-01 01:06:26.602559] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT - MAE: 0.3065, MSE: 0.1490, MAPE: 59.92%
+INFO:root:Saved TFT prediction plot and metrics.
+INFO:root:[2025-07-01 01:17:38.665023] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT - MAE: 0.2629, MSE: 0.1207, MAPE: 257.15%
+INFO:root:Saved TFT prediction plot and metrics.
+INFO:root:[2025-07-01 01:28:30.245364] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+ERROR:darts.metrics.metrics:ValueError: `actual_series` must be strictly positive to compute the MAPE.
+INFO:root:[2025-07-01 01:38:07.133365] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT - MAE: 0.3852, MSE: 1.1311, MAPE: 78.56%
+INFO:root:Saved TFT prediction plot and metrics.
+[2025-07-01 02:06:23.608447] Starting baseline_ml.py (mini test version)
+[2025-07-01 02:06:23.608583] Loading train and test datasets...
+[2025-07-01 02:06:23.915781] Generating sliding windows for training data...
+[2025-07-01 02:06:25.127667] Generating sliding windows for test data...
+[2025-07-01 02:06:25.210012] Train shape: (92646, 1860), Test shape: (19782, 1860)
+[2025-07-01 02:06:25.210275] Training RandomForest model...
+[2025-07-01 02:10:58.000664] Random Forest trained.
+[2025-07-01 02:10:58.000996] Predicting test set...
+[2025-07-01 02:16:03.957936] RandomForest_Mini - MAE: 0.3963, MSE: 1.2140, MAPE: 754.08%
+[2025-07-01 02:16:04.268018] Saved ML prediction plot and metrics.
+INFO:root:[2025-07-01 02:17:39.118630] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT - MAE: 0.2493, MSE: 0.6175, MAPE: 54.58%
+INFO:root:Saved TFT prediction plot and metrics.
+INFO:root:[2025-07-02 11:31:52.144671] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92647 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT Hyperparameters - Input: 60, Output: 30, Hidden: 32, LSTM: 1, Dropout: 0.1, Batch: 64, Epochs: 1
+INFO:root:TFT P10 - MAE: 0.3957, MSE: 1.1048, MAPE: 92.43%
+INFO:root:TFT P50 - MAE: 0.3957, MSE: 1.1048, MAPE: 92.43%
+INFO:root:TFT P90 - MAE: 0.3957, MSE: 1.1048, MAPE: 92.43%
+INFO:root:Saved TFT prediction plots and quantile metrics.
+2025-07-03 03:25:23,088 - INFO - Starting Enhanced TFT Model Training and Evaluation
+2025-07-03 03:25:23,089 - INFO - Loading data...
+2025-07-03 03:25:23,321 - INFO - Converting to TimeSeries...
+2025-07-03 03:25:23,399 - INFO - Data shapes - Train: 92736, Val: 19872, Test: 19872
+2025-07-03 03:25:23,400 - INFO - Separating target and covariates...
+2025-07-03 03:25:23,409 - INFO - Using 30 covariates: ['Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Sensor 6', 'Sensor 7', 'Sensor 8', 'Sensor 9', 'Sensor 10', 'Sensor 11', 'Sensor 12', 'Sensor 13', 'Sensor 14', 'Sensor 15', 'Sensor 16', 'Sensor 17', 'Sensor 18', 'Sensor 19', 'Sensor 20', 'Sensor 21', 'Sensor 22', 'Sensor 23', 'Sensor 24', 'Sensor 25', 'Sensor 26', 'Sensor 27', 'Sensor 28', 'Sensor 29', 'Sensor 30', 'Sensor 31']
+2025-07-03 03:25:23,409 - INFO - Scaling features...
+2025-07-03 03:25:23,418 - INFO - Creating TFT model with enhanced configuration...
+2025-07-03 03:25:23,418 - INFO - Model parameters: {'input_chunk_length': 96, 'output_chunk_length': 30, 'hidden_size': 64, 'lstm_layers': 2, 'num_attention_heads': 4, 'full_attention': False, 'feed_forward': 'GatedResidualNetwork', 'dropout': 0.2, 'batch_size': 32, 'n_epochs': 50, 'add_relative_index': True, 'likelihood': QuantileRegression(quantiles=[0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95], prior_strength=1.0), 'random_state': 42, 'force_reset': True, 'pl_trainer_kwargs': {'accelerator': 'auto', 'gradient_clip_val': 1.0, 'enable_progress_bar': True, 'enable_model_summary': True}, 'add_encoders': {'cyclic': {'future': ['hour', 'day', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'month']}}}
+2025-07-03 03:25:23,423 - INFO - Starting model training...
+2025-07-03 03:25:23,423 - INFO - Training for 50 epochs with batch size 32
+2025-07-03 03:25:23,451 - INFO - Train dataset contains 92611 samples.
+2025-07-03 03:25:24,022 - INFO - Time series values are 32-bits; casting model to float32.
+2025-07-03 03:25:26,282 - ERROR - Training failed: Expected a 'mps:0' generator device but found 'cpu'
+2025-07-03 03:25:26,282 - ERROR - Script failed with error: Expected a 'mps:0' generator device but found 'cpu'
+2025-07-03 03:25:26,282 - INFO - Total execution time: 0.05 minutes
+2025-07-03 03:28:18,940 - INFO - Starting Enhanced TFT Model Training and Evaluation
+2025-07-03 03:28:18,941 - INFO - Loading data...
+2025-07-03 03:28:19,182 - INFO - Converting to TimeSeries...
+2025-07-03 03:28:19,263 - INFO - Data shapes - Train: 92736, Val: 19872, Test: 19872
+2025-07-03 03:28:19,265 - INFO - Separating target and covariates...
+2025-07-03 03:28:19,276 - INFO - Using 30 covariates: ['Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Sensor 6', 'Sensor 7', 'Sensor 8', 'Sensor 9', 'Sensor 10', 'Sensor 11', 'Sensor 12', 'Sensor 13', 'Sensor 14', 'Sensor 15', 'Sensor 16', 'Sensor 17', 'Sensor 18', 'Sensor 19', 'Sensor 20', 'Sensor 21', 'Sensor 22', 'Sensor 23', 'Sensor 24', 'Sensor 25', 'Sensor 26', 'Sensor 27', 'Sensor 28', 'Sensor 29', 'Sensor 30', 'Sensor 31']
+2025-07-03 03:28:19,276 - INFO - Scaling features...
+2025-07-03 03:28:19,285 - INFO - Creating TFT model with enhanced configuration...
+2025-07-03 03:28:19,285 - INFO - Model parameters: {'input_chunk_length': 96, 'output_chunk_length': 30, 'hidden_size': 64, 'lstm_layers': 2, 'num_attention_heads': 4, 'full_attention': False, 'feed_forward': 'GatedResidualNetwork', 'dropout': 0.2, 'batch_size': 32, 'n_epochs': 50, 'add_relative_index': True, 'likelihood': QuantileRegression(quantiles=[0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95], prior_strength=1.0), 'random_state': 42, 'force_reset': True, 'pl_trainer_kwargs': {'accelerator': 'auto', 'gradient_clip_val': 1.0, 'enable_progress_bar': True, 'enable_model_summary': True}, 'add_encoders': {'cyclic': {'future': ['hour', 'day', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'month']}}}
+2025-07-03 03:28:19,290 - INFO - Starting model training...
+2025-07-03 03:28:19,290 - INFO - Training for 50 epochs with batch size 32
+2025-07-03 03:28:19,318 - INFO - Train dataset contains 92611 samples.
+2025-07-03 03:28:19,361 - INFO - Time series values are 32-bits; casting model to float32.
+2025-07-03 03:28:41,913 - INFO - Total execution time: 0.38 minutes
+2025-07-03 03:58:13,980 - INFO - Starting Enhanced TFT Model Training and Evaluation
+2025-07-03 03:58:13,980 - INFO - Loading data...
+2025-07-03 03:58:14,221 - INFO - Converting to TimeSeries...
+2025-07-03 03:58:14,308 - INFO - Data shapes - Train: 92736, Val: 19872, Test: 19872
+2025-07-03 03:58:14,310 - INFO - Separating target and covariates...
+2025-07-03 03:58:14,320 - INFO - Using 30 covariates: ['Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Sensor 6', 'Sensor 7', 'Sensor 8', 'Sensor 9', 'Sensor 10', 'Sensor 11', 'Sensor 12', 'Sensor 13', 'Sensor 14', 'Sensor 15', 'Sensor 16', 'Sensor 17', 'Sensor 18', 'Sensor 19', 'Sensor 20', 'Sensor 21', 'Sensor 22', 'Sensor 23', 'Sensor 24', 'Sensor 25', 'Sensor 26', 'Sensor 27', 'Sensor 28', 'Sensor 29', 'Sensor 30', 'Sensor 31']
+2025-07-03 03:58:14,320 - INFO - Scaling features...
+2025-07-03 03:58:14,328 - INFO - Creating TFT model with enhanced configuration...
+2025-07-03 03:58:14,328 - INFO - Model parameters: {'input_chunk_length': 96, 'output_chunk_length': 30, 'hidden_size': 64, 'lstm_layers': 2, 'num_attention_heads': 4, 'full_attention': False, 'feed_forward': 'GatedResidualNetwork', 'dropout': 0.2, 'batch_size': 32, 'n_epochs': 50, 'add_relative_index': True, 'likelihood': QuantileRegression(quantiles=[0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95], prior_strength=1.0), 'random_state': 42, 'force_reset': True, 'pl_trainer_kwargs': {'accelerator': 'auto', 'gradient_clip_val': 1.0, 'enable_progress_bar': True, 'enable_model_summary': True}, 'add_encoders': {'cyclic': {'future': ['hour', 'day', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'month']}}}
+2025-07-03 03:58:14,332 - INFO - Starting model training...
+2025-07-03 03:58:14,332 - INFO - Training for 50 epochs with batch size 32
+2025-07-03 03:58:14,359 - INFO - Train dataset contains 92611 samples.
+2025-07-03 03:58:14,403 - INFO - Time series values are 32-bits; casting model to float32.
+2025-07-03 04:11:56,275 - INFO - Starting Enhanced TFT Model Training and Evaluation
+2025-07-03 04:11:56,275 - INFO - Loading data...
+2025-07-03 04:11:56,514 - INFO - Converting to TimeSeries...
+2025-07-03 04:11:56,590 - INFO - Data shapes - Train: 92736, Val: 19872, Test: 19872
+2025-07-03 04:11:56,592 - INFO - Separating target and covariates...
+2025-07-03 04:11:56,603 - INFO - Using 30 covariates: ['Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Sensor 6', 'Sensor 7', 'Sensor 8', 'Sensor 9', 'Sensor 10', 'Sensor 11', 'Sensor 12', 'Sensor 13', 'Sensor 14', 'Sensor 15', 'Sensor 16', 'Sensor 17', 'Sensor 18', 'Sensor 19', 'Sensor 20', 'Sensor 21', 'Sensor 22', 'Sensor 23', 'Sensor 24', 'Sensor 25', 'Sensor 26', 'Sensor 27', 'Sensor 28', 'Sensor 29', 'Sensor 30', 'Sensor 31']
+2025-07-03 04:11:56,603 - INFO - Scaling features...
+2025-07-03 04:11:56,613 - INFO - Creating TFT model with enhanced configuration...
+2025-07-03 04:11:56,613 - INFO - Model parameters: {'input_chunk_length': 96, 'output_chunk_length': 30, 'hidden_size': 64, 'lstm_layers': 2, 'num_attention_heads': 4, 'full_attention': False, 'feed_forward': 'GatedResidualNetwork', 'dropout': 0.2, 'batch_size': 32, 'n_epochs': 50, 'add_relative_index': True, 'likelihood': QuantileRegression(quantiles=[0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95], prior_strength=1.0), 'random_state': 42, 'force_reset': True, 'pl_trainer_kwargs': {'accelerator': 'auto', 'gradient_clip_val': 1.0, 'enable_progress_bar': True, 'enable_model_summary': True}, 'add_encoders': {'cyclic': {'future': ['hour', 'day', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'month']}}}
+2025-07-03 04:11:56,617 - INFO - Starting model training...
+2025-07-03 04:11:56,617 - INFO - Training for 50 epochs with batch size 32
+2025-07-03 04:11:56,642 - INFO - Train dataset contains 92611 samples.
+2025-07-03 04:11:56,681 - INFO - Time series values are 32-bits; casting model to float32.
+2025-07-03 04:12:23,975 - INFO - Total execution time: 0.46 minutes
+2025-07-03 04:13:16,378 - INFO - Starting Enhanced TFT Model Training and Evaluation
+2025-07-03 04:13:16,379 - INFO - Loading data...
+2025-07-03 04:13:16,600 - INFO - Converting to TimeSeries...
+2025-07-03 04:13:16,666 - INFO - Data shapes - Train: 92736, Val: 19872, Test: 19872
+2025-07-03 04:13:16,668 - INFO - Separating target and covariates...
+2025-07-03 04:13:16,677 - INFO - Using 30 covariates: ['Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Sensor 6', 'Sensor 7', 'Sensor 8', 'Sensor 9', 'Sensor 10', 'Sensor 11', 'Sensor 12', 'Sensor 13', 'Sensor 14', 'Sensor 15', 'Sensor 16', 'Sensor 17', 'Sensor 18', 'Sensor 19', 'Sensor 20', 'Sensor 21', 'Sensor 22', 'Sensor 23', 'Sensor 24', 'Sensor 25', 'Sensor 26', 'Sensor 27', 'Sensor 28', 'Sensor 29', 'Sensor 30', 'Sensor 31']
+2025-07-03 04:13:16,677 - INFO - Scaling features...
+2025-07-03 04:13:16,685 - INFO - Creating TFT model with enhanced configuration...
+2025-07-03 04:13:16,686 - INFO - Model parameters: {'input_chunk_length': 96, 'output_chunk_length': 30, 'hidden_size': 64, 'lstm_layers': 2, 'num_attention_heads': 4, 'full_attention': False, 'feed_forward': 'GatedResidualNetwork', 'dropout': 0.2, 'batch_size': 32, 'n_epochs': 50, 'add_relative_index': True, 'likelihood': QuantileRegression(quantiles=[0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95], prior_strength=1.0), 'random_state': 42, 'force_reset': True, 'pl_trainer_kwargs': {'accelerator': 'auto', 'gradient_clip_val': 1.0, 'enable_progress_bar': True, 'enable_model_summary': True}, 'add_encoders': {'cyclic': {'future': ['hour', 'day', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'month']}}}
+2025-07-03 04:13:16,690 - INFO - Starting model training...
+2025-07-03 04:13:16,690 - INFO - Training for 50 epochs with batch size 32
+2025-07-03 04:13:16,716 - INFO - Train dataset contains 92611 samples.
+2025-07-03 04:13:17,061 - INFO - Time series values are 32-bits; casting model to float32.
+2025-07-03 04:13:18,333 - ERROR - Training failed: Expected a 'mps:0' generator device but found 'cpu'
+2025-07-03 04:13:18,333 - ERROR - Script failed with error: Expected a 'mps:0' generator device but found 'cpu'
+2025-07-03 04:13:18,333 - INFO - Total execution time: 0.03 minutes
+2025-07-03 04:14:59,963 - INFO - Starting Enhanced TFT Model Training and Evaluation
+2025-07-03 04:14:59,963 - INFO - Loading data...
+2025-07-03 04:15:00,215 - INFO - Converting to TimeSeries...
+2025-07-03 04:15:00,294 - INFO - Data shapes - Train: 92736, Val: 19872, Test: 19872
+2025-07-03 04:15:00,296 - INFO - Separating target and covariates...
+2025-07-03 04:15:00,307 - INFO - Using 30 covariates: ['Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Sensor 6', 'Sensor 7', 'Sensor 8', 'Sensor 9', 'Sensor 10', 'Sensor 11', 'Sensor 12', 'Sensor 13', 'Sensor 14', 'Sensor 15', 'Sensor 16', 'Sensor 17', 'Sensor 18', 'Sensor 19', 'Sensor 20', 'Sensor 21', 'Sensor 22', 'Sensor 23', 'Sensor 24', 'Sensor 25', 'Sensor 26', 'Sensor 27', 'Sensor 28', 'Sensor 29', 'Sensor 30', 'Sensor 31']
+2025-07-03 04:15:00,308 - INFO - Scaling features...
+2025-07-03 04:15:00,318 - INFO - Creating TFT model with enhanced configuration...
+2025-07-03 04:15:00,318 - INFO - Model parameters: {'input_chunk_length': 96, 'output_chunk_length': 30, 'hidden_size': 64, 'lstm_layers': 2, 'num_attention_heads': 4, 'full_attention': False, 'feed_forward': 'GatedResidualNetwork', 'dropout': 0.2, 'batch_size': 32, 'n_epochs': 50, 'add_relative_index': True, 'likelihood': QuantileRegression(quantiles=[0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95], prior_strength=1.0), 'random_state': 42, 'force_reset': True, 'pl_trainer_kwargs': {'accelerator': 'auto', 'gradient_clip_val': 1.0, 'enable_progress_bar': True, 'enable_model_summary': True}, 'add_encoders': {'cyclic': {'future': ['hour', 'day', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'month']}}}
+2025-07-03 04:15:00,323 - INFO - Starting model training...
+2025-07-03 04:15:00,323 - INFO - Training for 50 epochs with batch size 32
+2025-07-03 04:15:00,348 - INFO - Train dataset contains 92611 samples.
+2025-07-03 04:15:00,541 - INFO - Time series values are 32-bits; casting model to float32.
+2025-07-03 04:15:01,808 - ERROR - Training failed: Expected a 'mps:0' generator device but found 'cpu'
+2025-07-03 04:15:01,808 - ERROR - Script failed with error: Expected a 'mps:0' generator device but found 'cpu'
+2025-07-03 04:15:01,808 - INFO - Total execution time: 0.03 minutes
+INFO:root:[2025-07-03 04:33:53.944108] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 92611 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT Hyperparameters - Input: 96, Output: 30, Hidden: 32, LSTM: 2, Dropout: 0.1, Batch: 128, Epochs: 30
+INFO:root:TFT P10 - MAE: 0.2623, MSE: 1.2945, MAPE: 53.86%
+INFO:root:TFT P50 - MAE: 0.2623, MSE: 1.2945, MAPE: 53.86%
+INFO:root:TFT P90 - MAE: 0.2623, MSE: 1.2945, MAPE: 53.86%
+INFO:root:Saved TFT prediction plots and quantile metrics.
