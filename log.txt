@@ -2371,3 +2371,387 @@ INFO:root:TFT P10 - MAE: 0.2623, MSE: 1.2945, MAPE: 53.86%
 INFO:root:TFT P50 - MAE: 0.2623, MSE: 1.2945, MAPE: 53.86%
 INFO:root:TFT P90 - MAE: 0.2623, MSE: 1.2945, MAPE: 53.86%
 INFO:root:Saved TFT prediction plots and quantile metrics.
+[2025-07-07 01:59:46.765228] Starting data preparation.
+[2025-07-07 01:59:49.170177] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-07 01:59:51.209915] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-07 01:59:52.812199] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-07 01:59:53.566449] Loaded 2025_raw.csv with shape (264902, 32)
+[2025-07-07 02:00:29.478743] Cleaned non-numeric values and filled NaNs.
+[2025-07-07 02:00:29.898103] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-07-07 02:00:30.080588] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-07-07 02:00:30.291523] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-07-07 02:00:30.439426] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-07-07 02:00:30.468315] Train shape: (92736, 32), Val shape: (19872, 32), Test shape: (19872, 32)
+[2025-07-07 02:00:31.957124] Saved unscaled raw train/val/test splits.
+[2025-07-07 02:00:32.014835] Saved plot to data/processed/sensor1_train_raw.png
+[2025-07-07 02:00:32.064869] Saved plot to data/processed/sensor1_val_raw.png
+[2025-07-07 02:00:32.113996] Saved plot to data/processed/sensor1_test_raw.png
+[2025-07-07 02:00:32.142245] StandardScaler fitted on train and applied to all splits.
+[2025-07-07 02:00:34.307864] Saved train/val/test CSVs to processed directory.
+[2025-07-07 02:00:34.307903] Data preparation complete.
+[2025-07-07 02:49:34.788698] Starting data preparation.
+[2025-07-07 02:49:36.998539] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-07 02:49:38.965951] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-07 02:49:40.514083] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-07 02:49:41.244636] Loaded 2025_raw.csv with shape (264902, 32)
+[2025-07-07 02:50:18.116195] Cleaned non-numeric values and filled NaNs.
+[2025-07-07 02:50:18.518802] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-07-07 02:50:18.730172] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-07-07 02:50:18.947011] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-07-07 02:50:19.095018] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-07-07 02:50:19.124328] Train shape: (108288, 32), Val shape: (13536, 32), Test shape: (13537, 32)
+[2025-07-07 02:50:20.818902] Saved unscaled raw train/val/test splits.
+[2025-07-07 02:50:20.881108] Saved plot to data/processed/sensor1_train_raw.png
+[2025-07-07 02:50:20.937904] Saved plot to data/processed/sensor1_val_raw.png
+[2025-07-07 02:50:20.989257] Saved plot to data/processed/sensor1_test_raw.png
+[2025-07-07 02:50:21.022822] StandardScaler fitted on train and applied to all splits.
+[2025-07-07 02:50:23.289098] Saved train/val/test CSVs to processed directory.
+[2025-07-07 02:50:23.289138] Data preparation complete.
+INFO:root:[2025-07-07 02:54:30.012717] Starting tft_model.py
+INFO:root:[2025-07-07 03:23:28.317138] Starting tft_model.py
+[2025-07-07 03:23:44.103197] Starting data preparation.
+[2025-07-07 03:23:46.596062] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-07 03:23:48.552629] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-07 03:23:50.057329] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-07 03:23:50.772128] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-07 03:24:26.810222] Cleaned non-numeric values and filled NaNs.
+[2025-07-07 03:24:27.235239] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-07-07 03:24:27.457078] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-07-07 03:24:27.673120] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-07-07 03:24:27.813646] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-07-07 03:24:27.843796] Train shape: (108288, 32), Val shape: (13536, 32), Test shape: (13536, 32)
+[2025-07-07 03:24:29.513004] Saved unscaled raw train/val/test splits.
+[2025-07-07 03:24:29.570266] Saved plot to data/processed/sensor1_train_raw.png
+[2025-07-07 03:24:29.622161] Saved plot to data/processed/sensor1_val_raw.png
+[2025-07-07 03:24:29.671625] Saved plot to data/processed/sensor1_test_raw.png
+[2025-07-07 03:24:29.700447] StandardScaler fitted on train and applied to all splits.
+[2025-07-07 03:24:31.967187] Saved train/val/test CSVs to processed directory.
+[2025-07-07 03:24:31.967229] Data preparation complete.
+INFO:root:[2025-07-07 03:25:43.786665] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 108163 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT Hyperparameters - Input: 96, Output: 30, Hidden: 32, LSTM: 2, Dropout: 0.1, Batch: 128, Epochs: 30
+INFO:root:TFT P10 - MAE: 0.4865, MSE: 0.4789, MAPE: 8.11%
+INFO:root:TFT P50 - MAE: 0.4865, MSE: 0.4789, MAPE: 8.11%
+INFO:root:TFT P90 - MAE: 0.4865, MSE: 0.4789, MAPE: 8.11%
+INFO:root:Saved trained TFT model to results/tft_model.pkl
+INFO:root:Saved TFT prediction plots and quantile metrics.
+INFO:root:[2025-07-07 22:24:24.029831] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 108163 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:[2025-07-07 23:05:47.406978] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 108163 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:TFT Hyperparameters - Input: 96, Output: 30, Hidden: 32, LSTM: 2, Dropout: 0.1, Batch: 128, Epochs: 1
+INFO:root:TFT P10 - MAE: 0.6893, MSE: 1.1213, MAPE: 11.15%
+INFO:root:TFT P50 - MAE: 0.6893, MSE: 1.1213, MAPE: 11.15%
+INFO:root:TFT P90 - MAE: 0.6893, MSE: 1.1213, MAPE: 11.15%
+INFO:root:Saved trained TFT model to results/tft_model.pkl
+INFO:root:Saved TFT prediction plots and quantile metrics.
+[2025-07-08 02:30:48.654801] Starting data preparation.
+[2025-07-08 02:30:51.140425] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-08 02:30:53.281042] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-08 02:30:55.051911] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-08 02:30:55.915297] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-08 02:31:32.876193] Cleaned non-numeric values and filled NaNs.
+[2025-07-08 02:31:33.267552] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-07-08 02:31:33.466761] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-07-08 02:31:33.711195] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-07-08 02:31:33.849579] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-07-08 02:31:33.880508] Train shape: (105984, 32), Val shape: (13248, 32), Test shape: (13248, 32)
+[2025-07-08 02:31:35.446511] Saved unscaled raw train/val/test splits.
+[2025-07-08 02:31:35.503555] Saved plot to data/processed/sensor1_train_raw.png
+[2025-07-08 02:31:35.564422] Saved plot to data/processed/sensor1_val_raw.png
+[2025-07-08 02:31:35.619031] Saved plot to data/processed/sensor1_test_raw.png
+[2025-07-08 02:31:35.651497] StandardScaler fitted on train and applied to all splits.
+[2025-07-08 02:31:37.924522] Saved train/val/test CSVs to processed directory.
+[2025-07-08 02:31:37.924572] Data preparation complete.
+INFO:root:[2025-07-08 02:34:39.700683] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 105859 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:Training completed in 169.82 minutes (2.83 hours)
+INFO:root:Actual epochs completed: 19
+INFO:root:Stopping reason: Early stopping triggered (validation loss stopped improving)
+INFO:root:TFT Hyperparameters - Input: 96, Output: 30, Hidden: 32, LSTM: 2, Dropout: 0.1, Batch: 128, Epochs: 30
+INFO:root:TFT P10 - MAE: 0.2228, MSE: 0.0763, MAPE: 141.71%
+INFO:root:TFT P50 - MAE: 0.2228, MSE: 0.0763, MAPE: 141.71%
+INFO:root:TFT P90 - MAE: 0.2228, MSE: 0.0763, MAPE: 141.71%
+INFO:root:Saved trained TFT model to results/tft_model.pkl
+INFO:root:Saved TFT prediction plots and quantile metrics.
+INFO:root:[2025-07-08 10:29:36.576370] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 105859 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:Training completed in 336.99 minutes (5.62 hours)
+INFO:root:Actual epochs completed: 30
+INFO:root:Stopping reason: Completed all planned epochs
+INFO:root:TFT Hyperparameters - Input: 96, Output: 30, Hidden: 32, LSTM: 2, Dropout: 0.1, Batch: 64, Epochs: 30
+INFO:root:TFT P10 - MAE: 0.1663, MSE: 0.0422, MAPE: 94.96%
+INFO:root:TFT P50 - MAE: 0.1663, MSE: 0.0422, MAPE: 94.96%
+INFO:root:TFT P90 - MAE: 0.1663, MSE: 0.0422, MAPE: 94.96%
+INFO:root:Saved trained TFT model to results/tft_model.pkl
+INFO:root:Saved TFT prediction plots and quantile metrics.
+INFO:root:[2025-07-09 23:12:34.027052] Starting tft_model.py
+INFO:root:Training TFT model...
+INFO:darts.models.forecasting.torch_forecasting_model:Train dataset contains 105859 samples.
+INFO:darts.models.forecasting.torch_forecasting_model:Time series values are 32-bits; casting model to float32.
+INFO:root:Training completed in 443.38 minutes (7.39 hours)
+INFO:root:Actual epochs completed: 30
+INFO:root:Stopping reason: Completed all planned epochs
+[2025-07-17 12:00:08.028140] Starting data preparation (no split).
+[2025-07-17 12:00:08.711743] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-17 12:00:14.429996] Cleaned non-numeric values and filled NaNs, filled the NaNs with values from previous/next row.
+[2025-07-17 12:00:14.734398] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-07-17 12:00:17.868133] Saved unscaled full data as full_raw.csv.
+[2025-07-17 12:00:17.957957] StandardScaler fitted on full data.
+[2025-07-17 12:00:22.342733] Saved scaled full data as full.csv.
+[2025-07-17 12:00:22.342781] Data preparation (no split) complete.
+[2025-07-18 11:30:24.042414] Starting data preparation.
+[2025-07-18 11:30:26.199329] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-18 11:30:28.106771] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-18 11:30:29.544501] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-18 11:30:30.236645] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-18 11:31:05.547719] Cleaned non-numeric values and filled NaNs, filled the NaNs with values from previous/next row.
+[2025-07-18 11:31:05.935775] Saved plot to data/processed/sensor1_2022_raw.png
+[2025-07-18 11:31:06.122477] Saved plot to data/processed/sensor1_2023_raw.png
+[2025-07-18 11:31:06.341320] Saved plot to data/processed/sensor1_2024_raw.png
+[2025-07-18 11:31:06.488788] Saved plot to data/processed/sensor1_2025_raw.png
+[2025-07-18 11:31:06.569915] Train shape: (207312, 32), Val shape: (25914, 32), Test shape: (25914, 32)
+[2025-07-18 11:31:09.631744] Saved unscaled raw train/val/test splits.
+[2025-07-18 11:31:09.691890] Saved plot to data/processed/sensor1_train_raw.png
+[2025-07-18 11:31:09.753295] Saved plot to data/processed/sensor1_val_raw.png
+[2025-07-18 11:31:09.801071] Saved plot to data/processed/sensor1_test_raw.png
+[2025-07-18 11:31:09.848752] StandardScaler fitted on train and applied to all splits.
+[2025-07-18 11:31:14.031411] Saved train/val/test CSVs to processed directory.
+[2025-07-18 11:31:14.031462] Data preparation complete.
+[2025-07-18 11:56:52.662846] Starting data preparation with missing date filling.
+[2025-07-18 11:56:54.625210] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-18 11:56:56.341854] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-18 11:56:57.755793] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-18 11:56:58.429750] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-18 11:57:27.584114] Could not infer frequency. Defaulting to minutes ('T').
+[2025-07-18 12:02:09.668819] Starting data preparation with missing date filling.
+[2025-07-18 12:02:11.591590] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-18 12:02:13.346146] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-18 12:02:14.760483] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-18 12:02:15.460314] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-18 12:02:44.610551] Could not infer frequency. Defaulting to minutes ('T').
+[2025-07-18 12:05:48.432926] Starting data preparation with missing date filling.
+[2025-07-18 12:09:44.567268] Starting data preparation with missing date filling.
+[2025-07-18 12:09:50.283285] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-18 12:09:55.546504] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-18 12:09:59.925528] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-18 12:10:02.228181] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-18 12:10:02.613300] Datetime parsing failed: time data "1/1/22 0:00" doesn't match format "%Y-%m-%d %H:%M:%S", at position 0. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+[2025-07-18 12:11:46.074460] Starting data preparation with missing date filling.
+[2025-07-18 12:11:51.579274] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-18 12:11:56.805591] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-18 12:12:01.146042] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-18 12:12:03.277692] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-18 12:12:30.447976] Used mixed format parsing for timestamps
+[2025-07-18 12:13:53.372854] Starting data preparation with missing date filling.
+[2025-07-18 12:13:58.917168] Loaded 2022_raw.csv with shape (525600, 32)
+[2025-07-18 12:14:04.171309] Loaded 2023_raw.csv with shape (525600, 32)
+[2025-07-18 12:14:08.546212] Loaded 2024_raw.csv with shape (527040, 32)
+[2025-07-18 12:14:10.689017] Loaded 2025_raw.csv with shape (264900, 32)
+[2025-07-18 12:14:37.901958] Used mixed format parsing for timestamps
+[2025-07-18 12:14:38.236930] Dropped duplicate: timestamp=2022-10-30 01:00:00, Sensor 1=2.095991216
+[2025-07-18 12:14:38.237028] Dropped duplicate: timestamp=2022-10-30 01:01:00, Sensor 1=1.895548649
+[2025-07-18 12:14:38.237084] Dropped duplicate: timestamp=2022-10-30 01:02:00, Sensor 1=2.034335811
+[2025-07-18 12:14:38.237132] Dropped duplicate: timestamp=2022-10-30 01:03:00, Sensor 1=1.941229054
+[2025-07-18 12:14:38.237178] Dropped duplicate: timestamp=2022-10-30 01:04:00, Sensor 1=1.942395946
+[2025-07-18 12:14:38.237222] Dropped duplicate: timestamp=2022-10-30 01:05:00, Sensor 1=1.893252703
+[2025-07-18 12:14:38.237267] Dropped duplicate: timestamp=2022-10-30 01:06:00, Sensor 1=1.887379054
+[2025-07-18 12:14:38.237311] Dropped duplicate: timestamp=2022-10-30 01:07:00, Sensor 1=2.050362838
+[2025-07-18 12:14:38.237354] Dropped duplicate: timestamp=2022-10-30 01:08:00, Sensor 1=2.048763514
+[2025-07-18 12:14:38.237396] Dropped duplicate: timestamp=2022-10-30 01:09:00, Sensor 1=2.047163514
+[2025-07-18 12:14:38.237439] Dropped duplicate: timestamp=2022-10-30 01:10:00, Sensor 1=1.625694595
+[2025-07-18 12:14:38.237482] Dropped duplicate: timestamp=2022-10-30 01:11:00, Sensor 1=2.043964865
+[2025-07-18 12:14:38.237528] Dropped duplicate: timestamp=2022-10-30 01:12:00, Sensor 1=2.037284459
+[2025-07-18 12:14:38.237565] Dropped duplicate: timestamp=2022-10-30 01:13:00, Sensor 1=1.666754054
+[2025-07-18 12:14:38.237603] Dropped duplicate: timestamp=2022-10-30 01:14:00, Sensor 1=2.038975
+[2025-07-18 12:14:38.237640] Dropped duplicate: timestamp=2022-10-30 01:15:00, Sensor 1=1.681352703
+[2025-07-18 12:14:38.237677] Dropped duplicate: timestamp=2022-10-30 01:16:00, Sensor 1=1.686126351
+[2025-07-18 12:14:38.237714] Dropped duplicate: timestamp=2022-10-30 01:17:00, Sensor 1=1.690900676
+[2025-07-18 12:14:38.237750] Dropped duplicate: timestamp=2022-10-30 01:18:00, Sensor 1=1.744869595
+[2025-07-18 12:14:38.237786] Dropped duplicate: timestamp=2022-10-30 01:19:00, Sensor 1=2.026216892
+[2025-07-18 12:14:38.237822] Dropped duplicate: timestamp=2022-10-30 01:20:00, Sensor 1=1.756108784
+[2025-07-18 12:14:38.237858] Dropped duplicate: timestamp=2022-10-30 01:21:00, Sensor 1=1.754329054
+[2025-07-18 12:14:38.237894] Dropped duplicate: timestamp=2022-10-30 01:22:00, Sensor 1=2.018562162
+[2025-07-18 12:14:38.237930] Dropped duplicate: timestamp=2022-10-30 01:23:00, Sensor 1=2.040450676
+[2025-07-18 12:14:38.237966] Dropped duplicate: timestamp=2022-10-30 01:24:00, Sensor 1=1.987326351
+[2025-07-18 12:14:38.238001] Dropped duplicate: timestamp=2022-10-30 01:25:00, Sensor 1=1.758558784
+[2025-07-18 12:14:38.238037] Dropped duplicate: timestamp=2022-10-30 01:26:00, Sensor 1=1.747311486
+[2025-07-18 12:14:38.238074] Dropped duplicate: timestamp=2022-10-30 01:27:00, Sensor 1=1.748435811
+[2025-07-18 12:14:38.238110] Dropped duplicate: timestamp=2022-10-30 01:28:00, Sensor 1=1.886342568
+[2025-07-18 12:14:38.238145] Dropped duplicate: timestamp=2022-10-30 01:29:00, Sensor 1=1.885702027
+[2025-07-18 12:14:38.238181] Dropped duplicate: timestamp=2022-10-30 01:30:00, Sensor 1=1.782698649
+[2025-07-18 12:14:38.238217] Dropped duplicate: timestamp=2022-10-30 01:31:00, Sensor 1=1.889832432
+[2025-07-18 12:14:38.238252] Dropped duplicate: timestamp=2022-10-30 01:32:00, Sensor 1=1.750854054
+[2025-07-18 12:14:38.238288] Dropped duplicate: timestamp=2022-10-30 01:33:00, Sensor 1=1.755342568
+[2025-07-18 12:14:38.238324] Dropped duplicate: timestamp=2022-10-30 01:34:00, Sensor 1=1.899235811
+[2025-07-18 12:14:38.238359] Dropped duplicate: timestamp=2022-10-30 01:35:00, Sensor 1=1.90237027
+[2025-07-18 12:14:38.238394] Dropped duplicate: timestamp=2022-10-30 01:36:00, Sensor 1=1.90287973
+[2025-07-18 12:14:38.238430] Dropped duplicate: timestamp=2022-10-30 01:37:00, Sensor 1=1.901092568
+[2025-07-18 12:14:38.238465] Dropped duplicate: timestamp=2022-10-30 01:38:00, Sensor 1=1.742931081
+[2025-07-18 12:14:38.238500] Dropped duplicate: timestamp=2022-10-30 01:39:00, Sensor 1=1.734833784
+[2025-07-18 12:14:38.238536] Dropped duplicate: timestamp=2022-10-30 01:40:00, Sensor 1=1.89572973
+[2025-07-18 12:14:38.238571] Dropped duplicate: timestamp=2022-10-30 01:41:00, Sensor 1=1.718638514
+[2025-07-18 12:14:38.238607] Dropped duplicate: timestamp=2022-10-30 01:42:00, Sensor 1=1.898367568
+[2025-07-18 12:14:38.238642] Dropped duplicate: timestamp=2022-10-30 01:43:00, Sensor 1=1.747049324
+[2025-07-18 12:14:38.238678] Dropped duplicate: timestamp=2022-10-30 01:44:00, Sensor 1=1.800174324
+[2025-07-18 12:14:38.238713] Dropped duplicate: timestamp=2022-10-30 01:45:00, Sensor 1=1.840206757
+[2025-07-18 12:14:38.238748] Dropped duplicate: timestamp=2022-10-30 01:46:00, Sensor 1=1.758664865
+[2025-07-18 12:14:38.238783] Dropped duplicate: timestamp=2022-10-30 01:47:00, Sensor 1=1.891222973
+[2025-07-18 12:14:38.238818] Dropped duplicate: timestamp=2022-10-30 01:48:00, Sensor 1=2.078078378
+[2025-07-18 12:14:38.238853] Dropped duplicate: timestamp=2022-10-30 01:49:00, Sensor 1=2.060962162
+[2025-07-18 12:14:38.238888] Dropped duplicate: timestamp=2022-10-30 01:50:00, Sensor 1=2.04384527
+[2025-07-18 12:14:38.238923] Dropped duplicate: timestamp=2022-10-30 01:51:00, Sensor 1=1.897006081
+[2025-07-18 12:14:38.238959] Dropped duplicate: timestamp=2022-10-30 01:52:00, Sensor 1=2.116098649
+[2025-07-18 12:14:38.238994] Dropped duplicate: timestamp=2022-10-30 01:53:00, Sensor 1=2.093858784
+[2025-07-18 12:14:38.239029] Dropped duplicate: timestamp=2022-10-30 01:54:00, Sensor 1=2.044122297
+[2025-07-18 12:14:38.239065] Dropped duplicate: timestamp=2022-10-30 01:55:00, Sensor 1=2.038277027
+[2025-07-18 12:14:38.239102] Dropped duplicate: timestamp=2022-10-30 01:56:00, Sensor 1=2.032431757
+[2025-07-18 12:14:38.239137] Dropped duplicate: timestamp=2022-10-30 01:57:00, Sensor 1=1.895899324
+[2025-07-18 12:14:38.239173] Dropped duplicate: timestamp=2022-10-30 01:58:00, Sensor 1=1.862618919
+[2025-07-18 12:14:38.239210] Dropped duplicate: timestamp=2022-10-30 01:59:00, Sensor 1=2.001134459
+[2025-07-18 12:14:38.239314] Dropped duplicate: timestamp=2023-10-29 01:00:00, Sensor 1=0.962639189
+[2025-07-18 12:14:38.239386] Dropped duplicate: timestamp=2023-10-29 01:01:00, Sensor 1=0.829606757
+[2025-07-18 12:14:38.239436] Dropped duplicate: timestamp=2023-10-29 01:02:00, Sensor 1=0.745591892
+[2025-07-18 12:14:38.239484] Dropped duplicate: timestamp=2023-10-29 01:03:00, Sensor 1=0.960280405
+[2025-07-18 12:14:38.239587] Dropped duplicate: timestamp=2023-10-29 01:04:00, Sensor 1=1.074466216
+[2025-07-18 12:14:38.239646] Dropped duplicate: timestamp=2023-10-29 01:05:00, Sensor 1=0.845986486
+[2025-07-18 12:14:38.239693] Dropped duplicate: timestamp=2023-10-29 01:06:00, Sensor 1=0.903052027
+[2025-07-18 12:14:38.239734] Dropped duplicate: timestamp=2023-10-29 01:07:00, Sensor 1=0.959062838
+[2025-07-18 12:14:38.239774] Dropped duplicate: timestamp=2023-10-29 01:08:00, Sensor 1=0.944267568
+[2025-07-18 12:14:38.239812] Dropped duplicate: timestamp=2023-10-29 01:09:00, Sensor 1=0.903052027
+[2025-07-18 12:14:38.239849] Dropped duplicate: timestamp=2023-10-29 01:10:00, Sensor 1=0.890582432
+[2025-07-18 12:14:38.239884] Dropped duplicate: timestamp=2023-10-29 01:11:00, Sensor 1=0.972800676
+[2025-07-18 12:14:38.239918] Dropped duplicate: timestamp=2023-10-29 01:12:00, Sensor 1=0.96804527
+[2025-07-18 12:14:38.239952] Dropped duplicate: timestamp=2023-10-29 01:13:00, Sensor 1=0.904531757
+[2025-07-18 12:14:38.239985] Dropped duplicate: timestamp=2023-10-29 01:14:00, Sensor 1=0.886672297
+[2025-07-18 12:14:38.240019] Dropped duplicate: timestamp=2023-10-29 01:15:00, Sensor 1=0.902523649
+[2025-07-18 12:14:38.240052] Dropped duplicate: timestamp=2023-10-29 01:16:00, Sensor 1=0.900530405
+[2025-07-18 12:14:38.240085] Dropped duplicate: timestamp=2023-10-29 01:17:00, Sensor 1=0.91732027
+[2025-07-18 12:14:38.240118] Dropped duplicate: timestamp=2023-10-29 01:18:00, Sensor 1=0.903183784
+[2025-07-18 12:14:38.240150] Dropped duplicate: timestamp=2023-10-29 01:19:00, Sensor 1=0.888041216
+[2025-07-18 12:14:38.240183] Dropped duplicate: timestamp=2023-10-29 01:20:00, Sensor 1=0.888785811
+[2025-07-18 12:14:38.240215] Dropped duplicate: timestamp=2023-10-29 01:21:00, Sensor 1=0.745125
+[2025-07-18 12:14:38.240248] Dropped duplicate: timestamp=2023-10-29 01:22:00, Sensor 1=0.896665541
+[2025-07-18 12:14:38.240281] Dropped duplicate: timestamp=2023-10-29 01:23:00, Sensor 1=0.891427703
+[2025-07-18 12:14:38.240313] Dropped duplicate: timestamp=2023-10-29 01:24:00, Sensor 1=0.890582432
+[2025-07-18 12:14:38.240345] Dropped duplicate: timestamp=2023-10-29 01:25:00, Sensor 1=0.894021622
+[2025-07-18 12:14:38.240377] Dropped duplicate: timestamp=2023-10-29 01:26:00, Sensor 1=0.906826351
+[2025-07-18 12:14:38.240410] Dropped duplicate: timestamp=2023-10-29 01:27:00, Sensor 1=0.918785135
+[2025-07-18 12:14:38.240442] Dropped duplicate: timestamp=2023-10-29 01:28:00, Sensor 1=0.931749324
+[2025-07-18 12:14:38.240474] Dropped duplicate: timestamp=2023-10-29 01:29:00, Sensor 1=0.904637162
+[2025-07-18 12:14:38.240506] Dropped duplicate: timestamp=2023-10-29 01:30:00, Sensor 1=0.966460135
+[2025-07-18 12:14:38.240538] Dropped duplicate: timestamp=2023-10-29 01:31:00, Sensor 1=0.915206757
+[2025-07-18 12:14:38.240570] Dropped duplicate: timestamp=2023-10-29 01:32:00, Sensor 1=0.947966216
+[2025-07-18 12:14:38.240603] Dropped duplicate: timestamp=2023-10-29 01:33:00, Sensor 1=0.886583108
+[2025-07-18 12:14:38.240635] Dropped duplicate: timestamp=2023-10-29 01:34:00, Sensor 1=0.885916216
+[2025-07-18 12:14:38.240669] Dropped duplicate: timestamp=2023-10-29 01:35:00, Sensor 1=0.872333784
+[2025-07-18 12:14:38.240701] Dropped duplicate: timestamp=2023-10-29 01:36:00, Sensor 1=0.886143919
+[2025-07-18 12:14:38.240734] Dropped duplicate: timestamp=2023-10-29 01:37:00, Sensor 1=0.819566892
+[2025-07-18 12:14:38.240766] Dropped duplicate: timestamp=2023-10-29 01:38:00, Sensor 1=0.810848649
+[2025-07-18 12:14:38.240799] Dropped duplicate: timestamp=2023-10-29 01:39:00, Sensor 1=0.855685135
+[2025-07-18 12:14:38.240831] Dropped duplicate: timestamp=2023-10-29 01:40:00, Sensor 1=0.855422297
+[2025-07-18 12:14:38.240863] Dropped duplicate: timestamp=2023-10-29 01:41:00, Sensor 1=0.817453378
+[2025-07-18 12:14:38.240895] Dropped duplicate: timestamp=2023-10-29 01:42:00, Sensor 1=0.893012838
+[2025-07-18 12:14:38.240927] Dropped duplicate: timestamp=2023-10-29 01:43:00, Sensor 1=0.826435811
+[2025-07-18 12:14:38.240959] Dropped duplicate: timestamp=2023-10-29 01:44:00, Sensor 1=0.776766216
+[2025-07-18 12:14:38.240991] Dropped duplicate: timestamp=2023-10-29 01:45:00, Sensor 1=0.89565473
+[2025-07-18 12:14:38.241022] Dropped duplicate: timestamp=2023-10-29 01:46:00, Sensor 1=0.741892568
+[2025-07-18 12:14:38.241054] Dropped duplicate: timestamp=2023-10-29 01:47:00, Sensor 1=0.748167568
+[2025-07-18 12:14:38.241086] Dropped duplicate: timestamp=2023-10-29 01:48:00, Sensor 1=0.744761486
+[2025-07-18 12:14:38.241118] Dropped duplicate: timestamp=2023-10-29 01:49:00, Sensor 1=0.831984459
+[2025-07-18 12:14:38.241150] Dropped duplicate: timestamp=2023-10-29 01:50:00, Sensor 1=0.748233784
+[2025-07-18 12:14:38.241182] Dropped duplicate: timestamp=2023-10-29 01:51:00, Sensor 1=0.749290541
+[2025-07-18 12:14:38.241213] Dropped duplicate: timestamp=2023-10-29 01:52:00, Sensor 1=0.748128378
+[2025-07-18 12:14:38.241245] Dropped duplicate: timestamp=2023-10-29 01:53:00, Sensor 1=0.758272973
+[2025-07-18 12:14:38.241277] Dropped duplicate: timestamp=2023-10-29 01:54:00, Sensor 1=0.84027027
+[2025-07-18 12:14:38.241309] Dropped duplicate: timestamp=2023-10-29 01:55:00, Sensor 1=0.838060811
+[2025-07-18 12:14:38.241341] Dropped duplicate: timestamp=2023-10-29 01:56:00, Sensor 1=0.745591892
+[2025-07-18 12:14:38.241372] Dropped duplicate: timestamp=2023-10-29 01:57:00, Sensor 1=0.758272973
+[2025-07-18 12:14:38.241404] Dropped duplicate: timestamp=2023-10-29 01:58:00, Sensor 1=0.856025676
+[2025-07-18 12:14:38.241435] Dropped duplicate: timestamp=2023-10-29 01:59:00, Sensor 1=0.75932973
+[2025-07-18 12:14:38.241467] Dropped duplicate: timestamp=2024-10-27 01:00:00, Sensor 1=0.773067568
+[2025-07-18 12:14:38.241499] Dropped duplicate: timestamp=2024-10-27 01:01:00, Sensor 1=0.752460811
+[2025-07-18 12:14:38.241530] Dropped duplicate: timestamp=2024-10-27 01:02:00, Sensor 1=0.748802703
+[2025-07-18 12:14:38.241562] Dropped duplicate: timestamp=2024-10-27 01:03:00, Sensor 1=0.766727027
+[2025-07-18 12:14:38.241594] Dropped duplicate: timestamp=2024-10-27 01:04:00, Sensor 1=0.707547973
+[2025-07-18 12:14:38.241625] Dropped duplicate: timestamp=2024-10-27 01:05:00, Sensor 1=0.742421622
+[2025-07-18 12:14:38.241657] Dropped duplicate: timestamp=2024-10-27 01:06:00, Sensor 1=0.730268243
+[2025-07-18 12:14:38.241688] Dropped duplicate: timestamp=2024-10-27 01:07:00, Sensor 1=0.732982432
+[2025-07-18 12:14:38.241719] Dropped duplicate: timestamp=2024-10-27 01:08:00, Sensor 1=0.761971622
+[2025-07-18 12:14:38.241751] Dropped duplicate: timestamp=2024-10-27 01:09:00, Sensor 1=0.743654054
+[2025-07-18 12:14:38.241782] Dropped duplicate: timestamp=2024-10-27 01:10:00, Sensor 1=0.898296622
+[2025-07-18 12:14:38.241813] Dropped duplicate: timestamp=2024-10-27 01:11:00, Sensor 1=0.892379054
+[2025-07-18 12:14:38.241844] Dropped duplicate: timestamp=2024-10-27 01:12:00, Sensor 1=0.893012838
+[2025-07-18 12:14:38.241876] Dropped duplicate: timestamp=2024-10-27 01:13:00, Sensor 1=0.723399324
+[2025-07-18 12:14:38.241907] Dropped duplicate: timestamp=2024-10-27 01:14:00, Sensor 1=0.719700676
+[2025-07-18 12:14:38.241938] Dropped duplicate: timestamp=2024-10-27 01:15:00, Sensor 1=0.877161486
+[2025-07-18 12:14:38.241970] Dropped duplicate: timestamp=2024-10-27 01:16:00, Sensor 1=0.948494595
+[2025-07-18 12:14:38.242001] Dropped duplicate: timestamp=2024-10-27 01:17:00, Sensor 1=0.949551351
+[2025-07-18 12:14:38.242033] Dropped duplicate: timestamp=2024-10-27 01:18:00, Sensor 1=0.717587162
+[2025-07-18 12:14:38.242064] Dropped duplicate: timestamp=2024-10-27 01:19:00, Sensor 1=0.96804527
+[2025-07-18 12:14:38.242095] Dropped duplicate: timestamp=2024-10-27 01:20:00, Sensor 1=0.978084459
+[2025-07-18 12:14:38.242126] Dropped duplicate: timestamp=2024-10-27 01:21:00, Sensor 1=0.96170473
+[2025-07-18 12:14:38.242158] Dropped duplicate: timestamp=2024-10-27 01:22:00, Sensor 1=0.943210811
+[2025-07-18 12:14:38.242189] Dropped duplicate: timestamp=2024-10-27 01:23:00, Sensor 1=0.977988514
+[2025-07-18 12:14:38.242220] Dropped duplicate: timestamp=2024-10-27 01:24:00, Sensor 1=0.704377703
+[2025-07-18 12:14:38.242251] Dropped duplicate: timestamp=2024-10-27 01:25:00, Sensor 1=0.988123649
+[2025-07-18 12:14:38.242283] Dropped duplicate: timestamp=2024-10-27 01:26:00, Sensor 1=0.773243919
+[2025-07-18 12:14:38.242315] Dropped duplicate: timestamp=2024-10-27 01:27:00, Sensor 1=0.947649324
+[2025-07-18 12:14:38.242346] Dropped duplicate: timestamp=2024-10-27 01:28:00, Sensor 1=0.780466216
+[2025-07-18 12:14:38.242387] Dropped duplicate: timestamp=2024-10-27 01:29:00, Sensor 1=0.769897297
+[2025-07-18 12:14:38.242418] Dropped duplicate: timestamp=2024-10-27 01:30:00, Sensor 1=0.980197973
+[2025-07-18 12:14:38.242450] Dropped duplicate: timestamp=2024-10-27 01:31:00, Sensor 1=0.745904054
+[2025-07-18 12:14:38.242481] Dropped duplicate: timestamp=2024-10-27 01:32:00, Sensor 1=0.772891216
+[2025-07-18 12:14:38.242513] Dropped duplicate: timestamp=2024-10-27 01:33:00, Sensor 1=0.783636486
+[2025-07-18 12:14:38.242553] Dropped duplicate: timestamp=2024-10-27 01:34:00, Sensor 1=0.890899324
+[2025-07-18 12:14:38.242767] Dropped duplicate: timestamp=2024-10-27 01:35:00, Sensor 1=0.768840541
+[2025-07-18 12:14:38.242828] Dropped duplicate: timestamp=2024-10-27 01:36:00, Sensor 1=0.761443243
+[2025-07-18 12:14:38.242866] Dropped duplicate: timestamp=2024-10-27 01:37:00, Sensor 1=0.77544527
+[2025-07-18 12:14:38.242917] Dropped duplicate: timestamp=2024-10-27 01:38:00, Sensor 1=0.795789865
+[2025-07-18 12:14:38.242950] Dropped duplicate: timestamp=2024-10-27 01:39:00, Sensor 1=0.757936486
+[2025-07-18 12:14:38.242982] Dropped duplicate: timestamp=2024-10-27 01:40:00, Sensor 1=0.749818919
+[2025-07-18 12:14:38.243021] Dropped duplicate: timestamp=2024-10-27 01:41:00, Sensor 1=0.751932432
+[2025-07-18 12:14:38.243075] Dropped duplicate: timestamp=2024-10-27 01:42:00, Sensor 1=0.747177027
+[2025-07-18 12:14:38.243116] Dropped duplicate: timestamp=2024-10-27 01:43:00, Sensor 1=0.783108108
+[2025-07-18 12:14:38.243153] Dropped duplicate: timestamp=2024-10-27 01:44:00, Sensor 1=0.795261486
+[2025-07-18 12:14:38.243188] Dropped duplicate: timestamp=2024-10-27 01:45:00, Sensor 1=0.763028378
+[2025-07-18 12:14:38.243223] Dropped duplicate: timestamp=2024-10-27 01:46:00, Sensor 1=0.728683108
+[2025-07-18 12:14:38.243262] Dropped duplicate: timestamp=2024-10-27 01:47:00, Sensor 1=0.883261486
+[2025-07-18 12:14:38.243296] Dropped duplicate: timestamp=2024-10-27 01:48:00, Sensor 1=0.913958108
+[2025-07-18 12:14:38.243329] Dropped duplicate: timestamp=2024-10-27 01:49:00, Sensor 1=0.904637162
+[2025-07-18 12:14:38.243361] Dropped duplicate: timestamp=2024-10-27 01:50:00, Sensor 1=0.879466892
+[2025-07-18 12:14:38.243394] Dropped duplicate: timestamp=2024-10-27 01:51:00, Sensor 1=0.877293243
+[2025-07-18 12:14:38.243426] Dropped duplicate: timestamp=2024-10-27 01:52:00, Sensor 1=0.88587973
+[2025-07-18 12:14:38.243458] Dropped duplicate: timestamp=2024-10-27 01:53:00, Sensor 1=0.895302703
+[2025-07-18 12:14:38.243491] Dropped duplicate: timestamp=2024-10-27 01:54:00, Sensor 1=0.879803378
+[2025-07-18 12:14:38.243523] Dropped duplicate: timestamp=2024-10-27 01:55:00, Sensor 1=0.901466892
+[2025-07-18 12:14:38.243554] Dropped duplicate: timestamp=2024-10-27 01:56:00, Sensor 1=0.879406757
+[2025-07-18 12:14:38.243585] Dropped duplicate: timestamp=2024-10-27 01:57:00, Sensor 1=0.89565473
+[2025-07-18 12:14:38.243617] Dropped duplicate: timestamp=2024-10-27 01:58:00, Sensor 1=0.879803378
+[2025-07-18 12:14:38.243649] Dropped duplicate: timestamp=2024-10-27 01:59:00, Sensor 1=0.776237838
+[2025-07-18 12:14:38.400757] Could not infer frequency. Defaulting to minutes ('T').
+[2025-07-18 12:14:39.042945] Filled missing dates and sensor values.
+[2025-07-18 12:14:39.418852] Saved plot to data/processed/sensor1_2022_raw_filled.png
+[2025-07-18 12:14:39.552168] Saved plot to data/processed/sensor1_2023_raw_filled.png
+[2025-07-18 12:14:39.693389] Saved plot to data/processed/sensor1_2024_raw_filled.png
+[2025-07-18 12:14:39.799547] Saved plot to data/processed/sensor1_2025_raw_filled.png
+[2025-07-18 12:14:39.817031] Train shape: (207360, 32), Val shape: (25920, 32), Test shape: (25920, 32)
+[2025-07-18 12:14:42.795216] Saved unscaled raw train/val/test splits (filled).
+[2025-07-18 12:14:42.857810] Saved plot to data/processed/sensor1_train_raw_filled.png
+[2025-07-18 12:14:42.916374] Saved plot to data/processed/sensor1_val_raw_filled.png
+[2025-07-18 12:14:42.966221] Saved plot to data/processed/sensor1_test_raw_filled.png
+[2025-07-18 12:14:43.021436] StandardScaler fitted on train and applied to all splits (filled).
+[2025-07-18 12:14:47.218849] Saved train/val/test CSVs to processed directory (filled). Data preparation with missing date filling complete.

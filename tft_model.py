@@ -21,29 +21,8 @@ import torch
 # Force CPU usage to avoid MPS float64 issues
 torch.set_default_device('cpu')
 
-class TFTConfig:
-    def __init__(self):
-        self.INPUT_WINDOW = 96
-        self.OUTPUT_HORIZON = 30
-        self.HIDDEN_SIZE = 32
-        self.LSTM_LAYERS = 2
-        self.NUM_ATTENTION_HEADS = 4
-        self.DROPOUT = 0.1
-
-        self.BATCH_SIZE = 128
-        self.MAX_EPOCHS = 30
-        self.LEARNING_RATE = 1e-3
-        self.WEIGHT_DECAY = 1e-4
-
-        self.TARGET = "Sensor 1"
-        self.QUANTILES = [0.1, 0.5, 0.9]
-        self.VALIDATION_SPLIT = 0.2
-
-        self.PROC_DIR = "data/processed"
-        self.RESULTS_DIR = "results"
-        self.LOG_PATH = "log.txt"
-        self.MODEL_SAVE_PATH = os.path.join(self.RESULTS_DIR, "tft_model.pkl")
-        self.METRICS_FILE = os.path.join(self.RESULTS_DIR, "metrics_tft.csv")
+# Import shared configuration
+from config import TFTConfig
 
 logging.basicConfig(filename=TFTConfig().LOG_PATH, level=logging.INFO)
 logging.info(f"[{datetime.now()}] Starting tft_model.py")
@@ -95,15 +74,16 @@ model = TFTModel(
     batch_size=config.BATCH_SIZE,
     n_epochs=config.MAX_EPOCHS,
     likelihood=QuantileRegression(quantiles=config.QUANTILES),
+    optimizer_kwargs={"lr": config.LEARNING_RATE},
     random_state=42,
     force_reset=True,
     pl_trainer_kwargs={
-        "accelerator": "cpu",
-        "gradient_clip_val": 1.0,
+        "accelerator": "mps",
+        "gradient_clip_val": 0.5,  # Reduced from 1.0
         "enable_progress_bar": True,
         "enable_model_summary": True,
         "callbacks": [
-            EarlyStopping(monitor="val_loss", patience=7, mode="min"),
+            EarlyStopping(monitor="val_loss", patience=10, mode="min"),
         ],
     }
 )
@@ -124,9 +104,32 @@ model.fit(
     val_future_covariates=covariates_val_scaled
 )
 
+# Get actual epochs completed and reason for stopping
+actual_epochs = getattr(model, 'epochs_trained', config.MAX_EPOCHS)
+early_stopping_reason = "Completed all epochs"
+
+# Check if early stopping occurred
+if actual_epochs < config.MAX_EPOCHS:
+    # Try to get early stopping reason from trainer
+    try:
+        trainer = getattr(model, 'trainer', None)
+        if trainer and hasattr(trainer, 'early_stopping_callback'):
+            early_stopping_reason = "Early stopping triggered (validation loss stopped improving)"
+        else:
+            early_stopping_reason = f"Stopped early at epoch {actual_epochs} (reason unknown)"
+    except:
+        early_stopping_reason = f"Stopped early at epoch {actual_epochs} (early stopping likely)"
+else:
+    early_stopping_reason = "Completed all planned epochs"
+
 print("Predicting...")
 fit_end = time.time()
-tqdm.write(f"[INFO] Training completed in {(fit_end - fit_start)/60:.2f} minutes")
+training_time_minutes = (fit_end - fit_start) / 60
+training_time_hours = training_time_minutes / 60
+tqdm.write(f"[INFO] Training completed in {training_time_minutes:.2f} minutes ({training_time_hours:.2f} hours)")
+logging.info(f"Training completed in {training_time_minutes:.2f} minutes ({training_time_hours:.2f} hours)")
+logging.info(f"Actual epochs completed: {actual_epochs}")
+logging.info(f"Stopping reason: {early_stopping_reason}")
 
 forecast = model.historical_forecasts(
     series=target_val_scaled,
@@ -147,10 +150,28 @@ y_true_unscaled = target_scaler.inverse_transform(y_true)
 forecast_unscaled = target_scaler.inverse_transform(forecast)
 
 # Extract quantiles (P10, P50, P90) from probabilistic forecast
+print("Forecast sample shape:", forecast_unscaled.values().shape)
+print("Number of samples:", forecast_unscaled.n_samples)
 print("Extracting quantile predictions...")
-forecast_p10 = forecast_unscaled.quantile_timeseries(0.1) if forecast_unscaled.n_samples > 1 else forecast_unscaled
-forecast_p50 = forecast_unscaled.quantile_timeseries(0.5) if forecast_unscaled.n_samples > 1 else forecast_unscaled  # Median
-forecast_p90 = forecast_unscaled.quantile_timeseries(0.9) if forecast_unscaled.n_samples > 1 else forecast_unscaled
+forecast_p10 = forecast_unscaled.quantile_timeseries(0.1)
+forecast_p50 = forecast_unscaled.quantile_timeseries(0.5)
+forecast_p90 = forecast_unscaled.quantile_timeseries(0.9)
+# --- Quick Diagnostic Block ---
+print("Forecast P50 length:", len(forecast_p50))
+print("True length:", len(y_true_unscaled))
+print("Forecast P50 time index (first 10):", forecast_p50.time_index[:10])
+print("True time index (first 10):", y_true_unscaled.time_index[:10])
+
+if np.array_equal(forecast_p50.time_index[:len(y_true_unscaled)], y_true_unscaled.time_index):
+    print("✅ Time indices are aligned.")
+else:
+    print("❌ Time indices are NOT aligned!")
+
+# Check the spread between quantiles
+print("P90 - P10 spread (max, mean):", 
+      np.max(forecast_p90.values() - forecast_p10.values()), 
+      np.mean(forecast_p90.values() - forecast_p10.values()))
+# --- End Diagnostic Block ---
 
 # Calculate metrics for each quantile
 mae_p10 = mae(y_true_unscaled, forecast_p10)
@@ -176,6 +197,9 @@ print(f"  Input Window: {config.INPUT_WINDOW}, Output Horizon: {config.OUTPUT_HO
 print(f"  Hidden Size: {config.HIDDEN_SIZE}, LSTM Layers: {config.LSTM_LAYERS}")
 print(f"  Dropout: {config.DROPOUT}")
 print(f"  Batch Size: {config.BATCH_SIZE}, Epochs: {config.MAX_EPOCHS}")
+print(f"  Actual Epochs Completed: {actual_epochs}")
+print(f"  Training Time: {training_time_minutes:.2f} minutes ({training_time_hours:.2f} hours)")
+print(f"  Stopping Reason: {early_stopping_reason}")
 print(f"  Quantiles: {config.QUANTILES}")
 
 print(f"\nTFT Quantile Results:")
@@ -198,7 +222,8 @@ except FileNotFoundError:
         "MAE_P50", "MSE_P50", "MAPE_P50", 
         "MAE_P90", "MSE_P90", "MAPE_P90",
         "input_chunk_length", "output_chunk_length", "hidden_size", 
-        "lstm_layers", "dropout", "batch_size", "n_epochs", "quantiles"
+        "lstm_layers", "dropout", "batch_size", "n_epochs", "actual_epochs", 
+        "training_time_minutes", "training_time_hours", "stopping_reason", "quantiles"
     ])
 
 # Create single row with all metrics and hyperparameters
@@ -215,6 +240,10 @@ new_run = {
     "dropout": config.DROPOUT,
     "batch_size": config.BATCH_SIZE,
     "n_epochs": config.MAX_EPOCHS,
+    "actual_epochs": actual_epochs,
+    "training_time_minutes": training_time_minutes,
+    "training_time_hours": training_time_hours,
+    "stopping_reason": early_stopping_reason,
     "quantiles": str(config.QUANTILES)
 }
 
@@ -222,50 +251,76 @@ results_df = pd.concat([results_df, pd.DataFrame([new_run])], ignore_index=True)
 results_df.to_csv(config.METRICS_FILE, index=False)
 
 print("Generating plot with uncertainty bands...")
-plt.figure(figsize=(14, 6))
+plt.figure(figsize=(16, 8))
 
 # Plot unscaled values for better interpretability
 y_true_unscaled.plot(label="True", linewidth=2, color='black')
-forecast_p50.plot(label="TFT P50 (Median)", linestyle="--", color='blue')
+forecast_p50.plot(label="TFT P50 (Median)", linestyle="--", color='blue', linewidth=2)
 
-# Add uncertainty bands
+# Add uncertainty bands with better visibility
 plt.fill_between(
     forecast_p10.time_index, 
     forecast_p10.values().flatten(), 
     forecast_p90.values().flatten(), 
-    alpha=0.2, 
-    color='blue', 
+    alpha=0.3, 
+    color='lightblue', 
     label='P10-P90 Uncertainty Band'
 )
 
-plt.legend()
-plt.title("TFT Probabilistic Forecast vs True (Validation Set - Unscaled)")
-plt.ylabel("Sensor 1 Value")
-plt.xlabel("Time")
+plt.legend(fontsize=12)
+plt.title("TFT Probabilistic Forecast vs True (Validation Set - Unscaled)", fontsize=14, fontweight='bold')
+plt.ylabel("Sensor 1 Value (°C)", fontsize=12)
+plt.xlabel("Time", fontsize=12)
+
+# Format x-axis dates
+plt.gca().xaxis.set_major_locator(plt.matplotlib.dates.DayLocator(interval=1))
+plt.gca().xaxis.set_major_formatter(plt.matplotlib.dates.DateFormatter('%Y-%m-%d'))
+plt.xticks(rotation=45)
+
+# Add grid for better readability
+plt.grid(True, alpha=0.3)
+
 plt.tight_layout()
-plt.savefig(os.path.join(config.RESULTS_DIR, "pred_vs_actual_tft.png"))
+plt.savefig(os.path.join(config.RESULTS_DIR, "pred_vs_actual_tft.png"), dpi=300, bbox_inches='tight')
 
 # Also create a detailed quantile plot
-plt.figure(figsize=(14, 8))
-y_true_unscaled.plot(label="True", linewidth=2, color='black')
-forecast_p10.plot(label="P10", linestyle=":", alpha=0.7, color='red')
-forecast_p50.plot(label="P50 (Median)", linestyle="--", color='blue')
-forecast_p90.plot(label="P90", linestyle=":", alpha=0.7, color='green')
+plt.figure(figsize=(16, 10))
+
+# Plot all quantiles with better visibility
+y_true_unscaled.plot(label="True", linewidth=3, color='black')
+forecast_p10.plot(label="P10 (Lower Bound)", linestyle="-", alpha=0.8, color='red', linewidth=2)
+forecast_p50.plot(label="P50 (Median)", linestyle="-", color='blue', linewidth=3)
+forecast_p90.plot(label="P90 (Upper Bound)", linestyle="-", alpha=0.8, color='green', linewidth=2)
+
+# Add uncertainty bands with higher alpha for visibility
 plt.fill_between(
     forecast_p10.time_index, 
     forecast_p10.values().flatten(), 
     forecast_p90.values().flatten(), 
-    alpha=0.1, 
-    color='gray', 
-    label='P10-P90 Range'
+    alpha=0.4, 
+    color='lightblue', 
+    label='P10-P90 Uncertainty Range'
 )
-plt.legend()
-plt.title("TFT Quantile Predictions vs True (Validation Set)")
-plt.ylabel("Sensor 1 Value")
-plt.xlabel("Time")
-plt.tight_layout()
-plt.savefig(os.path.join(config.RESULTS_DIR, "pred_vs_actual_tft_quantiles.png"))
 
+plt.legend(fontsize=12, loc='upper left')
+plt.title("TFT Quantile Predictions vs True (Validation Set)", fontsize=14, fontweight='bold')
+plt.ylabel("Sensor 1 Value (°C)", fontsize=12)
+plt.xlabel("Time", fontsize=12)
+
+# Format x-axis dates
+plt.gca().xaxis.set_major_locator(plt.matplotlib.dates.DayLocator(interval=1))
+plt.gca().xaxis.set_major_formatter(plt.matplotlib.dates.DateFormatter('%Y-%m-%d'))
+plt.xticks(rotation=45)
+
+# Add grid for better readability
+plt.grid(True, alpha=0.3)
+
+plt.tight_layout()
+plt.savefig(os.path.join(config.RESULTS_DIR, "pred_vs_actual_tft_quantiles.png"), dpi=300, bbox_inches='tight')
+
+# Save the trained model for later use
+model.save(config.MODEL_SAVE_PATH)
+logging.info(f"Saved trained TFT model to {config.MODEL_SAVE_PATH}")
 logging.info("Saved TFT prediction plots and quantile metrics.")
 
 elapsed_time = time.time() - start_time

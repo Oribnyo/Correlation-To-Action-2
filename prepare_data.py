@@ -14,8 +14,6 @@ import matplotlib.pyplot as plt
 RAW_DIR = "data/raw"
 PROC_DIR = "data/processed"
 LOG_PATH = "log.txt"
-INPUT_WINDOW = 60  # past 60 minutes
-OUTPUT_WINDOW = 30  # next 30 minutes
 TARGET_COLUMN = "Sensor 1"
 TIMESTAMP_COL = "timestamp"
 
@@ -42,9 +40,9 @@ full_df = full_df.sort_values(TIMESTAMP_COL).reset_index(drop=True)
 
 # Clean non-numeric
 sensor_cols = full_df.columns.drop(TIMESTAMP_COL)
-full_df[sensor_cols] = full_df[sensor_cols].apply(pd.to_numeric, errors='coerce')
-full_df[sensor_cols] = full_df[sensor_cols].ffill().bfill()
-log("Cleaned non-numeric values and filled NaNs.")
+full_df[sensor_cols] = full_df[sensor_cols].apply(pd.to_numeric, errors='coerce') #fill in NaNs
+full_df[sensor_cols] = full_df[sensor_cols].ffill().bfill() #fill NanS with values from previous/next row
+log("Cleaned non-numeric values and filled NaNs, filled the NaNs with values from previous/next row.")
 
 # Plot Sensor 1 for each original file
 os.makedirs(PROC_DIR, exist_ok=True)
@@ -64,15 +62,15 @@ for f in files:
     log(f"Saved plot to {plot_path}")
 
 
-# Train/val/test split by time (Jun-Jul-Aug 2023, 70/15/15)
-jun_jul_aug_df = full_df[(full_df[TIMESTAMP_COL] >= "2023-06-01") & (full_df[TIMESTAMP_COL] < "2023-09-01")].copy()
-total_len = len(jun_jul_aug_df)
-train_end_idx = int(total_len * 0.7)
-val_end_idx = int(total_len * 0.85)
+# Train/val/test split by time (Apr-May-June 2025, 80/10/10)
+apr_may_june_df = full_df[(full_df[TIMESTAMP_COL] >= "2025-01-01") & (full_df[TIMESTAMP_COL] < "2025-06-30")].copy()
+total_len = len(apr_may_june_df)
+train_end_idx = int(total_len * 0.8)
+val_end_idx = int(total_len * 0.9)
 
-train_df = jun_jul_aug_df.iloc[:train_end_idx]
-val_df = jun_jul_aug_df.iloc[train_end_idx:val_end_idx]
-test_df = jun_jul_aug_df.iloc[val_end_idx:]
+train_df = apr_may_june_df.iloc[:train_end_idx]
+val_df = apr_may_june_df.iloc[train_end_idx:val_end_idx]
+test_df = apr_may_june_df.iloc[val_end_idx:]
 
 log(f"Train shape: {train_df.shape}, Val shape: {val_df.shape}, Test shape: {test_df.shape}")
 

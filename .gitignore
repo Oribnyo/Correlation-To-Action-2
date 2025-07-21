@@ -60,4 +60,4 @@ Thumbs.db
 *.png
 *.jpg
 *.jpeg
-!test_visualization.png 
+!test_visualization.png .env
